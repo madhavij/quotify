@@ -9,6 +9,7 @@ class TestQuotify(TestCase):
         self.quotify = Quotify()
 
     def test_get_file_contents(self):
+
         file_content = self.quotify.get_file_contents("resources/quotes.txt")
         self.assertEqual(len(file_content),19)
         self.assertEqual(file_content[0],"\"If you want to shine like a sun. First burn like a sun.\"\n")
